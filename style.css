@@ -1,0 +1,126 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #22d3ee;
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+}
+
+/* File Input */
+input[type="file"] {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1e293b;
+  color: #f8fafc;
+  border: 2px solid #334155;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #334155;
+}
+
+/* Textarea */
+textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 130px;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  resize: none;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #22d3ee;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.4);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1 1 30%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.5);
+}
+
+/* Canvas */
+canvas {
+  margin-top: 20px;
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 2px dashed #22d3ee;
+}
+
+/* Decoded Message */
+#decodedMessage {
+  margin-top: 30px;
+  padding: 18px;
+  background-color: #16a34a;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
+}
